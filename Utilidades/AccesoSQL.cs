@@ -28,8 +28,7 @@ namespace Utilidades
             catch (Exception ex)
             {
                 command.Connection.Dispose();
-
-                SPAUtils.Notificaciones.MostrarError(ex);
+                throw ex;
             }
 
             return r;

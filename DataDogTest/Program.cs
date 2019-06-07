@@ -18,7 +18,7 @@ namespace DataDogTest
             // optional: set the new tracer as the new default/global tracer
             Tracer.Instance = tracer;
             */
-            if (Utilidades.Configuracion.CadenaConexion == "Set here your DB connection string")
+            if (Utilidades.Configuracion.CadenaConexion == Utilidades.Configuracion.CadenaConexionNoConfigurada)
             {
                 MessageBox.Show("Before start the program you should put your DB connection string in 'Configuracion' class of the 'Utilidades' project. And next you should creat de table View_ClientesCombo with Codigo and Nombre string columns");
                 return;

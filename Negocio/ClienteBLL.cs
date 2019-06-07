@@ -23,7 +23,6 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-                SPAUtils.Log.Save.GuardarException(ex);
                 throw new Exception("Error al obtener los clientes de la base de datos.");
             }
             finally
@@ -50,7 +49,6 @@ namespace Negocio
             }
             catch (Exception ex)
             {
-                SPAUtils.Log.Save.GuardarException(ex);
                 throw new Exception("Error al obtener los clientes de la base de datos.");
             }
             finally
